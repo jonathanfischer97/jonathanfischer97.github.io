@@ -19,6 +19,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.62;
+  color-scheme: dark;
 }
 
 a {
