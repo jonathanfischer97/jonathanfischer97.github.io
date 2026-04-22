@@ -54,6 +54,26 @@ main,
 .hero {
   padding: 2rem 0 1rem;
 }
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 300px);
+  gap: 2.25rem;
+  align-items: start;
+}
+.hero-main {
+  min-width: 0;
+}
+.hero-portrait {
+  margin: 0;
+}
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
 .eyebrow,
 .section-label {
   text-transform: uppercase;
@@ -152,4 +172,14 @@ main,
   }
 
   .hero h1 { max-width: 100%; }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .hero-portrait {
+    order: -1;
+    max-width: 220px;
+    justify-self: center;
+  }
 }
