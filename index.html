@@ -1,56 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jonathan Fischer</title>
-  <meta name="description" content="Jonathan Fischer’s portfolio and blog—biophysicist, Julia/Python developer, and researcher.">
-  <meta property="og:title" content="Jonathan Fischer">
-  <meta property="og:description" content="PhD student in Biophysics at JHU modeling and simulating biochemical oscillators, Julia/Python coding">
-  <meta property="og:url" content="https://jonathanfischer.org">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9VLXYLDY0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-Z9VLXYLDY0');
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonathan Fischer | Scientific Software & Biophysics</title>
+  <meta name="description" content="Jonathan Fischer is a Johns Hopkins-trained biophysicist building scientific software, computational models, and technical workflows for complex biological systems." />
+  <meta property="og:title" content="Jonathan Fischer" />
+  <meta property="og:description" content="Scientific software, nonlinear dynamics, computational biology, and technical communication." />
+  <meta property="og:url" content="https://jonathanfischer.org" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Jonathan Fischer</h1>
-    <p>5th Year PhD Candidate, Johns Hopkins Biophysics</p>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">Jonathan Fischer</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#links">Links</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="top">
+      <p class="eyebrow">Scientific software · computational biology · nonlinear dynamics</p>
+      <h1>Building technical systems for complex biological problems.</h1>
+      <p class="hero-copy">
+        I recently completed a PhD in Biophysics at Johns Hopkins, where I built computational models,
+        simulation workflows, and scientific software for biochemical oscillators and membrane-localized
+        dynamical systems. My work sits at the boundary of biology, math, code, and technical communication.
+      </p>
+      <div class="cta-row">
+        <a class="button button-primary" href="Jonathan_Fischer_Resume.pdf">Download Resume</a>
+        <a class="button" href="https://github.com/jonathanfischer97">GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/jonathanfischer97">LinkedIn</a>
+      </div>
+    </section>
   </header>
 
   <main>
-    <section class="about">
-        <p>I am a 5th year PhD candidate in Dr. Margaret Johnson's lab at Johns Hopkins University's Department of Biophysics. I model biochemical oscillators and enjoy building scientific tools in Julia.</p>
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="section-label">About</p>
+        <h2>What I do</h2>
+      </div>
+      <div class="card">
+        <p>
+          My research has focused on how geometry, transport constraints, and reaction-network structure shape
+          oscillatory behavior in biological systems. I work primarily in Julia and Python, and I am especially
+          interested in building usable technical tools rather than isolated scripts: simulation pipelines,
+          visualization workflows, reproducible analysis systems, and developer tooling around scientific codebases.
+        </p>
+        <p>
+          Beyond research itself, I enjoy translating complex technical ideas for mixed audiences. That includes
+          mentoring students, teaching quantitative biology, creating high-signal figures and animations,
+          and hosting industry-facing programming through the Hopkins Biotech Network.
+        </p>
+      </div>
     </section>
 
-    <section class="links">
-      <a href="https://github.com/jonathanfischer97">GitHub</a>
-      <a href="https://www.linkedin.com/in/jonathanfischer97">LinkedIn</a>
-    </section>
-      <section class="research">
-        <h2>Research Interests</h2>
-        <p>Placeholder text about modeling dynamic biochemical systems.</p>
-      </section>
+    <section class="section" id="work">
+      <div class="section-heading">
+        <p class="section-label">Selected Work</p>
+        <h2>Things worth clicking on</h2>
+      </div>
+      <div class="grid two-col">
+        <article class="card">
+          <h3>OscillatorOptimization.jl</h3>
+          <p>
+            A scientific software workflow for identifying and analyzing oscillatory regimes in biochemical models,
+            combining simulation, optimization, and parameter exploration.
+          </p>
+          <a class="text-link" href="https://github.com/jonathanfischer97">View on GitHub</a>
+        </article>
 
-      <section class="projects">
-        <h2>Projects</h2>
-        <p>Placeholder text for personal projects and open-source contributions.</p>
-      </section>
+        <article class="card">
+          <h3>First-author preprint</h3>
+          <p>
+            <em>A membrane-driven biochemical oscillator tunable by volume-to-surface-area ratio</em>.
+            A modeling study on membrane-localized biochemical oscillators and geometric control of dynamics.
+          </p>
+          <a class="text-link" href="https://doi.org/10.1101/2025.11.14.688573">View preprint</a>
+        </article>
+
+        <article class="card">
+          <h3>Scientific visualization</h3>
+          <p>
+            Publication-quality figures and animations designed to make high-dimensional dynamical behavior legible,
+            persuasive, and easy to discuss with interdisciplinary collaborators.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Technical communication</h3>
+          <p>
+            Talks at ASCB 2022, APS 2023, and the 2023 Gordon Research Conference on Stochastic Physics in Biology,
+            plus teaching and mentoring across undergraduate and graduate settings.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section-heading">
+        <p class="section-label">Research</p>
+        <h2>Core themes</h2>
+      </div>
+      <div class="grid three-col">
+        <article class="card compact">
+          <h3>Biochemical oscillators</h3>
+          <p>Modeling tunable oscillations in membrane-localized reaction networks.</p>
+        </article>
+        <article class="card compact">
+          <h3>Scientific computing</h3>
+          <p>Julia and Python workflows for simulation, analysis, and reproducibility.</p>
+        </article>
+        <article class="card compact">
+          <h3>Developer tooling</h3>
+          <p>Automation and context-aware tooling for technical workflows, including MCP-based experiments.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="links">
+      <div class="section-heading">
+        <p class="section-label">Links</p>
+        <h2>Find me elsewhere</h2>
+      </div>
+      <div class="card link-list">
+        <a href="Jonathan_Fischer_Resume.pdf">Resume (PDF)</a>
+        <a href="https://github.com/jonathanfischer97">GitHub</a>
+        <a href="https://www.linkedin.com/in/jonathanfischer97">LinkedIn</a>
+        <a href="https://jonathanfischer.org">Website</a>
+        <a href="mailto:jonathan.a.fischer@gmail.com">jonathan.a.fischer@gmail.com</a>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>Contact: <a href="mailto:jonathan.a.fischer@gmail.com">jonathan.a.fischer@gmail.com</a></p>
+  <footer class="site-footer">
+    <p>Jonathan Fischer · Sacramento, CA</p>
   </footer>
 </body>
 </html>
-
